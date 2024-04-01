@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Pages\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.28">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.28" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Movies\Details.cshtml.cs" />
+    <Compile Remove="Movies\Create.cshtml.cs" />
+    <Compile Remove="Movies\Edit.cshtml.cs" />
+    <Compile Remove="Movies\Delete.cshtml.cs" />
+    <Compile Remove="Movies\Index.cshtml.cs" />
+    <Compile Remove="Views\Movies.BAK\Create.cshtml.cs" />
+    <Compile Remove="Views\Movies.BAK\Details.cshtml.cs" />
+    <Compile Remove="Views\Movies.BAK\Edit.cshtml.cs" />
+    <Compile Remove="Views\Movies.BAK\Delete.cshtml.cs" />
+    <Compile Remove="Views\Movies.BAK\Index.cshtml.cs" />
+    <Compile Remove="Pages\Movies\Create.cs" />
+    <Compile Remove="Pages\Movies\Index.cs" />
+    <Compile Remove="Pages\Movies\Create.cshtml.cs" />
+    <Compile Remove="Pages\Movies\Edit.cshtml.cs" />
+    <Compile Remove="Pages\Movies\Details.cshtml.cs" />
+    <Compile Remove="Pages\Movies\Delete.cshtml.cs" />
+    <Compile Remove="Pages\Movies\Index.cshtml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Movies\Edit.cshtml" />
+    <Content Remove="Movies\Delete.cshtml" />
+    <Content Remove="Movies\Create.cshtml" />
+    <Content Remove="Movies\Index.cshtml" />
+    <Content Remove="Movies\Details.cshtml" />
+    <Content Remove="Views\Movies.BAK\Delete.cshtml" />
+    <Content Remove="Views\Movies.BAK\Create.cshtml" />
+    <Content Remove="Views\Movies.BAK\Edit.cshtml" />
+    <Content Remove="Views\Movies.BAK\Index.cshtml" />
+    <Content Remove="Views\Movies.BAK\Details.cshtml" />
+    <Content Remove="Pages\Movies\Create.cshtml" />
+    <Content Remove="Pages\Movies\Edit.cshtml" />
+    <Content Remove="Pages\Movies\Details.cshtml" />
+    <Content Remove="Pages\Movies\Delete.cshtml" />
+    <Content Remove="Pages\Movies\Index.cshtml" />
+    <Content Remove="wwwroot\images\" />
+  </ItemGroup>
+</Project>
